@@ -1,7 +1,7 @@
 console.log("===Umur===")
 
 
-const nama = "Budi";
+const nama = "awi";
 const tahunLahir = 2002;
 const tahunSekarang = 2026;
 
