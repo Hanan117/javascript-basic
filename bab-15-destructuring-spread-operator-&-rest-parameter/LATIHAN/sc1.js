@@ -7,9 +7,7 @@ const pengguna = {
 
 const profilBaru =  {
     ...pengguna,
-  nama: "Budi Santoso",
-  email: "budi@email.com",
-  umur: 20,
+  
   kota: "Bandung",
   status : "Aktif",
 
