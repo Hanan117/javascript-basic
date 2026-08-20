@@ -1,0 +1,92 @@
+:root {
+  --primary-color: #e50914;
+  --bg-color: #141414;
+  --card-bg: #1f1f1f;
+  --text-color: #ffffff;
+  --gray-text: #b3b3b3;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+}
+h1 {
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.card {
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #333;
+  background: #2b2b2b;
+  color: white;
+  box-sizing: border-box;
+}
+
+.btn-container {
+  display: flex;
+  gap: 10px;
+}
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+}
+.btn-submit {
+  background-color: var(--primary-color);
+  flex: 2;
+}
+.btn-reset {
+  background-color: #333;
+  flex: 1;
+}
+
+.error-msg {
+  color: #ffa00a;
+  background: rgba(255, 160, 10, 0.1);
+  padding: 10px;
+  margin-bottom: 15px;
+  display: none;
+}
+
+.ticket-item {
+  background: #2b2b2b;
+  padding: 12px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 4px solid var(--primary-color);
+}
+.btn-delete {
+  background-color: #ff4d4d;
+}
+.empty-state {
+  color: var(--gray-text);
+  text-align: center;
+  font-style: italic;
+}
