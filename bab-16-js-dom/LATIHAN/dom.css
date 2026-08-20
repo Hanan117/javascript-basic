@@ -69,6 +69,7 @@ body {
 }
 
 
+.activity-list { list-style: none; }
 .activity-item {
     display: flex;
     justify-content: space-between;
@@ -95,3 +96,11 @@ body {
 
 .btn-hapus:hover {
      background-color: rgb(221, 228, 21) }
+
+
+
+
+footer p {
+    text-align: center;
+    font-weight: italic;
+}
