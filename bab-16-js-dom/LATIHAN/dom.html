@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Santri</title>
+    <link rel="stylesheet" href="dom.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <div class="iconxdashboard">
+        <div class="icon">
+          <i class="fa-solid fa-book-bookmark"></i>
+        </div>
+
+        <div class="dashboard-header">
+          <h1>Dashboard Santri</h1>
+          <p>Sistem Informasi Aktivitas Harian</p>
+        </div>
+      </div>
+
+      <section class="dashboard-body">
+        <div class="profile-card">
+          <div class="icon-profile">
+            <i class="fa-solid fa-user"></i>
+            <h3>Nama Lengkap</h3>
+            <br>
+            <span id="nama-santri">-</span>
+          </div>
+        
+
+        
+          <div class="icon-profile">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h3>Kelas</h3>
+            <span id="kelas-santri">-</span>
+          </div>
+        
+
+        
+          <div class="icon-profile">
+            <i class="fa-solid fa-shield-dog"></i>
+            <h3>Status</h3> 
+            <span id="status-santri">-</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="dashboard-daftar">
+        <i class="fa-solid fa-clipboard-list"></i>
+
+        <h2 class="section-title">Daftar Aktivitas</h2>
+        </div>
+        <ul id="list-aktivitas" class="activity-list"></ul>
+      
+    </div>
+
+    <script src="dom.js"></script>
+  </body>
+</html>
