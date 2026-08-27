@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Santri - User Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <!-- Tombol Toggle Tema & Kontrol Utama -->
+      <div class="top-controls">
+        <button id="theme-toggle" class="btn-theme">
+          <i class="fa-solid fa-moon"></i>
+          <span id="theme-text">Mode Gelap</span>
+        </button>
+      </div>
+
+      <div class="iconxdashboard">
+        <div class="icon">
+          <i class="fa-solid fa-book-bookmark"></i>
+        </div>
+        <div class="dashboard-header">
+          <h1>Dashboard Santri</h1>
+          <p>Sistem Informasi Aktivitas Harian & Pengguna</p>
+        </div>
+      </div>
+
+      <!-- TAMPILAN 1: DASHBOARD UTAMA -->
+      <div id="view-dashboard">
+        <section class="dashboard-body">
+          <div class="profile-card">
+            <div class="icon-profile">
+              <i class="fa-solid fa-user"></i>
+              <h3>Nama Lengkap</h3>
+              <br />
+              <span id="nama-santri">Administrator</span>
+            </div>
+            <div class="icon-profile">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <h3>Kelas</h3>
+              <span id="kelas-santri">XII - Rekayasa Perangkat Lunak</span>
+            </div>
+            <div class="icon-profile">
+              <i class="fa-solid fa-shield-dog"></i>
+              <h3>Status</h3>
+              <span id="status-santri">Aktif</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Input Pencarian Pengguna -->
+        <div class="search-container">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Cari nama santri/pengguna..."
+          />
+        </div>
+
+        <div class="dashboard-daftar">
+          <i class="fa-solid fa-clipboard-list"></i>
+          <h2 class="section-title">Daftar Pengguna / Aktivitas</h2>
+        </div>
+
+        <!-- Indikator Loading & Error -->
+        <div id="loading-indicator">
+          <i class="fa-solid fa-spinner fa-spin fa-2x"></i>
+          <p>Memuat data...</p>
+        </div>
+        <div id="error-message"></div>
+
+        <!-- Daftar Kartu Pengguna dari API/Lokal -->
+        <div id="users-container" class="users-grid"></div>
+
+        <!-- Daftar Aktivitas Tambahan -->
+        <ul id="list-aktivitas" class="activity-list"></ul>
+      </div>
+
+      <!-- TAMPILAN 2: HALAMAN DETAIL PENGGUNA (SPA) -->
+      <div id="view-detail" style="display: none">
+        <button id="btn-back">
+          <i class="fa-solid fa-arrow-left"></i> Kembali ke Dashboard
+        </button>
+        <div class="profile-card" id="detail-content">
+          <!-- Konten detail akan dirender via JavaScript -->
+        </div>
+      </div>
+
+      <footer>
+        <p>&copy; 2026 Hanan. Make a Dashboard.</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

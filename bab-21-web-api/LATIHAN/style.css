@@ -1,0 +1,200 @@
+/* Gaya Dasar & Layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dashboard-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.top-controls {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+}
+
+.btn-theme {
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: #fff;
+    font-size: 14px;
+}
+
+.iconxdashboard {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.iconxdashboard .icon {
+    font-size: 30px;
+    color: #007bff;
+}
+
+.dashboard-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.dashboard-header p {
+    margin: 5px 0 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.dashboard-body .profile-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.icon-profile {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.icon-profile i {
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 8px;
+}
+
+.icon-profile h3 {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.icon-profile span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.search-container {
+    margin: 20px 0;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.dashboard-daftar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    margin: 0;
+    font-size: 18px;
+}
+
+#loading-indicator {
+    text-align: center;
+    padding: 20px;
+    display: none;
+}
+
+#error-message {
+    color: red;
+    text-align: center;
+    padding: 20px;
+    display: none;
+}
+
+.users-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.user-card {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.2s, background 0.3s, border-color 0.3s;
+}
+
+.user-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+#btn-back {
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    background: #007bff;
+    color: white;
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 30px;
+    color: #666;
+}
+
+/* Styling Dark Mode */
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+body.dark-mode .dashboard-container {
+    background-color: #242424;
+    color: #f0f0f0;
+}
+
+body.dark-mode .profile-card .icon-profile,
+body.dark-mode .user-card,
+body.dark-mode #detail-content {
+    background-color: #2d2d2d !important;
+    color: #f0f0f0 !important;
+    border-color: #444 !important;
+}
+
+body.dark-mode input,
+body.dark-mode button#theme-toggle {
+    background-color: #333;
+    color: #fff;
+    border-color: #555;
+}
+
+body.dark-mode .dashboard-header p,
+body.dark-mode .icon-profile h3,
+body.dark-mode footer p {
+    color: #aaa;
+}
